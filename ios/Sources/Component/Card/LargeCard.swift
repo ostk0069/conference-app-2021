@@ -37,7 +37,7 @@ public struct LargeCard: View {
                 Text(title)
                     .font(.headline)
                     .foregroundColor(AssetColor.Base.primary.color)
-                    .lineLimit(2)
+                    .lineLimit(3)
 
                 HStack(spacing: 8) {
                     Tag(type: tag) {
