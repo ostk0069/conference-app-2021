@@ -144,6 +144,10 @@ var package = Package(
             name: "Utility",
             dependencies: []
         ),
+        .binaryTarget(
+            name: "DroidKaigiMPP",
+            path: "build/xcframeworks/DroidKaigiMPP.xcframework"
+        )
     ]
 )
 
@@ -169,12 +173,4 @@ package.targets.append(contentsOf: [
         name: "MediaFeatureTests",
         dependencies: ["MediaFeature"]
     ),
-])
-
-// MARK: - Library Targets
-package.targets.append(contentsOf: [
-    .binaryTarget(
-        name: "DroidKaigiMPP",
-        path: "build/xcframeworks/DroidKaigiMPP.xcframework"
-    )
 ])
